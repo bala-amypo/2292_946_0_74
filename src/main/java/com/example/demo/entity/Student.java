@@ -1,4 +1,5 @@
 package com.example.demo.entity;
+import jakarta.persistence.*;
 
 public class Student{
     private long Id;
@@ -15,7 +16,7 @@ public class Student{
     public string getName(){
         return name;
     }
-    public void setName(){
+    public void setName(string name){
         this.name=name;
     }
     public string getEmail(){
@@ -29,6 +30,15 @@ public class Student{
     }
     public void setCgpa(float cgpa){
         this.cgpa=cgpa;
+    }
+    public Student(int id, String stuname, String stuemail, float cgpa) {
+        this.id = id;
+        this.stuname = stuname;
+        this.stuemail = stuemail;
+        this.cgpa = cgpa;
+    }
+
+    public Student() {
     }
 
 }
