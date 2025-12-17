@@ -1,6 +1,6 @@
 package com.example.demo.studentserviceimp;
 
-import java.util.List;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -24,5 +24,7 @@ public class StudentServiceImp implements StudentService{
         return repo.findAll();
     }
 
-    public
+    public Optional<Student> fetchDataById(){
+        return repo.findById(id);
+    }
 }
