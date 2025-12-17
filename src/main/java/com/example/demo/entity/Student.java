@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 @Entity
 public class Student{
     @Id
-    private long Id;
+    private longId;
     private string name;
     private string email;
     private float cgpa;
