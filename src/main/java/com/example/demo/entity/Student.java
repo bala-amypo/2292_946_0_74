@@ -4,9 +4,9 @@ import jakarta.persistence.*;
 @Entity
 public class Student{
     @Id
-    private longId;
-    private string name;
-    private string email;
+    private long Id;
+    private string stuname;
+    private string stuemail;
     private float cgpa;
 
     public long getId(){
