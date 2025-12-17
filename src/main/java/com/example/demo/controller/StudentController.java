@@ -1,5 +1,5 @@
 package com.example.demo.controller;
-
+import java.util.*;
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 
@@ -19,10 +19,10 @@ public class StudentController {
         return ser.createData(stu);
     }
 
-    @GetMapping("/fetchdatabyid /{id}"){
-        public Optional <Student>fetchDataById(@PathVariable int id){
-            return ser.fetchDataById(id);
-        }
+    @GetMapping("/fetchdatabyid/{id}")
+    public Optional<Student> fetchDataById(@PathVariable int id){
+          return ser.fetchDataById(id);
     }
+    
 
 }
