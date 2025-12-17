@@ -14,11 +14,11 @@ public class StudentServiceImp implements StudentService{
     @Autowired
     StudentRepository repo;
 
-    @override
+    @Override
     public Student createData(Student stu){
         return repo.save(stu);
     }
-    @override 
+    @Override 
     public List<Student>fetchRecord(){
         return repo.findAll();
     }
