@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
 import java.util.List;
-impoort com.example.demo.entity.Student;
+import com.example.demo.entity.Student;
 
 public interface StudentService {
 
