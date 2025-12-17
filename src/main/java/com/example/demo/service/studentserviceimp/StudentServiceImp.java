@@ -23,4 +23,6 @@ public class StudentServiceImp implements StudentService{
     public List<Student> fetchRecord(){
         return repo.findAll();
     }
+
+    public
 }
