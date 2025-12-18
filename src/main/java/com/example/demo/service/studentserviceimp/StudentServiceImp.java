@@ -27,4 +27,8 @@ public class StudentServiceImp implements StudentService{
     public Optional<Student> fetchDataById(int id){
         return repo.findById(id);
     }
+    @Override
+    public void deleteData(int id){
+         repo.deleteById(id); 
+    }
 }
